@@ -35,3 +35,13 @@ The Unreal Engine Manager is capable of performing the following tasks:
 - Generating a new `.desktop` shortcut for a specific Unreal Engine version.
 - Launching the Unreal Editor for a specific Unreal Engine version.
 - Uninstalling a specific version of Unreal Engine.
+
+## Contributions
+
+Anyone is welcome to contribute to this project. If you have any suggestions or improvements, please feel free to open
+an issue and/or pull request. Even just reporting a bug is appreciated!
+
+## Disclaimer
+
+This is an application I originally made for myself, then decided to share. I am not affiliated with Epic Games in any
+way. Use this at your own risk, as I am not responsible for any damages or losses that may occur.
