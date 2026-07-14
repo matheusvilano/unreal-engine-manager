@@ -19,6 +19,11 @@ additional information at the bottom of the window.
 
 ![Unreal Engine Manager (Graphical User Interface)](./resources/demo.png)
 
+To install a new version of Unreal Engine, you must provide your own ZIP archive, sourced from the [Unreal Engine for
+Linux](https://www.unrealengine.com/linux) webpage. This link is also accessible from within the application (via the
+"Get" button). Sourcing your own ZIP archive eliminates the need to log into your Epic Games account using a third-party
+application, which many users find undesirable (usually due to security concerns).
+
 ## Features
 
 The Unreal Engine Manager is capable of performing the following tasks:
