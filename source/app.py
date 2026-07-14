@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+# Copyright 2024 Matheus Vilano
+# SPDX-License-Identifier: Apache-2.0
 
 from getpass import getuser
 from os import access, W_OK
@@ -15,8 +16,8 @@ from tkinter.ttk import Frame, Button, Label, Scrollbar, Radiobutton, Progressba
 from webbrowser import open as web_open
 from zipfile import ZipFile
 
-from source.config import INSTALL_ROOT, REQUIRED_FOLDERS, SHARED_GROUP
-from source.helpers import registry, unreal, gui, zip, system
+from helpers import registry, unreal, gui, zip, system
+from helpers.config import INSTALL_ROOT, REQUIRED_FOLDERS, SHARED_GROUP
 
 # UI Constants
 

@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+# Copyright 2024 Matheus Vilano
+# SPDX-License-Identifier: Apache-2.0
 
 from os import access, X_OK
 from pathlib import Path

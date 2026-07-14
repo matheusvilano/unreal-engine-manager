@@ -1,11 +1,12 @@
-#!/usr/bin/env python3
+# Copyright 2024 Matheus Vilano
+# SPDX-License-Identifier: Apache-2.0
 
 from grp import getgrnam
 from os import getuid, getgid, chmod, chown, walk, path
 from pathlib import Path
 from stat import S_IXUSR, S_IXGRP, S_IXOTH
 
-from source.config import SHARED_GROUP, EXTENSIONS_WHITELIST, BINARIES_WHITELIST, MIME_FILE, INSTALL_ROOT
+from helpers.config import SHARED_GROUP, EXTENSIONS_WHITELIST, BINARIES_WHITELIST, MIME_FILE, INSTALL_ROOT
 
 
 def get_group_gid() -> int:

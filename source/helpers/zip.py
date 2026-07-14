@@ -1,8 +1,9 @@
-#!/usr/bin/env python3
+# Copyright 2024 Matheus Vilano
+# SPDX-License-Identifier: Apache-2.0
 
 from pathlib import Path
 
-from source.config import REQUIRED_FOLDERS
+from helpers.config import REQUIRED_FOLDERS
 
 
 def validate_extraction(target_path: str | Path):
