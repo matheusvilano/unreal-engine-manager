@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 from getpass import getuser
 from os import access, W_OK
 from pathlib import Path
