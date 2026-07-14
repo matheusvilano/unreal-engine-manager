@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Unreal Engine Manager
+Comment=An application for managing Unreal Engine installations.
+Exec=/opt/unreal-engine-manager/source/main.py %F
+Terminal=false
+Icon=unreal-engine
+Categories=Development;Utility;
+Keywords=Unreal;Engine;GameDev;Python;
+StartupNotify=true
