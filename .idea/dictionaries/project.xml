@@ -1,6 +1,14 @@
 <component name="ProjectDictionaryState">
   <dictionary name="project">
     <words>
+      <w>hicolor</w>
+      <w>optdepends</w>
+      <w>pkgdesc</w>
+      <w>pkgdir</w>
+      <w>pkgname</w>
+      <w>pkgrel</w>
+      <w>pkgver</w>
+      <w>srcdir</w>
       <w>vname</w>
     </words>
   </dictionary>
