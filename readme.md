@@ -12,6 +12,13 @@ This package will soon be available on the [Arch User Repository](https://aur.ar
 README will be updated to reflect the new installation instructions. In the meantime, you can use this application by
 cloning this repository, setting its root as the current working directory, then running `python ./source/main.py`.
 
+## Usage
+
+The application has a straightforward graphical user interface. Hovering over any widget will display a tooltip with
+additional information at the bottom of the window.
+
+![Unreal Engine Manager (Graphical User Interface)](./resources/demo.png)
+
 ## Features
 
 The Unreal Engine Manager is capable of performing the following tasks:
