@@ -2,15 +2,17 @@
 
 ## Summary
 
-A Python-based Linux application for managing Unreal Engine installations. This is not a fancy Epic Games Launcher
+A Linux application for managing Unreal Engine installations. This is not a fancy Epic Games Launcher 
 replacement - instead, this application is meant to be minimal and bloat-free. Put simply, it is a GUI-enabled and
-user-friendly alternative to the unreal-engine-bin AUR package.
+user-friendly alternative to the unreal-engine-bin AUR package, written exclusively in pure Python.
 
 ## Installation
 
-This package will soon be available on the [Arch User Repository](https://aur.archlinux.org/). When that happens, this
-README will be updated to reflect the new installation instructions. In the meantime, you can use this application by
-cloning this repository, setting its root as the current working directory, then running `python ./source/main.py`.
+This package is available as an [AUR package](https://aur.archlinux.org/packages/unreal-engine-manager). To 
+install it, you can use any AUR helper such as `paru` or `yay`. Example: `paru -S unreal-engine-manager`.
+
+Alternatively, you can clone this repository and use this application by running `python ./source/main.py`. 
+The only dependency is `tk` (**tkinter**).
 
 ## Usage
 
