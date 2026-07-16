@@ -1,2 +1,2 @@
-# Copyright 2024 Matheus Vilano
+# Copyright 2026 Matheus Vilano
 # SPDX-License-Identifier: Apache-2.0
