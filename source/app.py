@@ -17,7 +17,7 @@ from webbrowser import open as web_open
 from zipfile import ZipFile
 
 from helpers import registry, unreal, gui, zip, system
-from helpers.config import INSTALL_ROOT, REQUIRED_FOLDERS, SHARED_GROUP
+from helpers.config import INSTALL_ROOT, REQUIRED_FOLDERS, SHARED_GROUP, APP_ICON
 
 # UI Constants
 
@@ -48,7 +48,7 @@ class UnrealManagerApp(Tk):
         self.resizable(False, False)
 
         # Icon
-        icon_path = Path(__file__).resolve().parent.parent / "resources" / "icon.gif"
+        icon_path = APP_ICON
         icon = PhotoImage(file=str(icon_path))
         self.iconphoto(False, icon)
 

@@ -3,7 +3,9 @@
 
 from pathlib import Path
 
-APP_ICON = Path(__file__).parent.parent / "resources" / "icon.gif"
+_REPO_ROOT = Path(__file__).parent.parent.parent
+
+APP_ICON = _REPO_ROOT / "resources" / "icon.gif"
 """Path to the application icon."""
 
 MIME_FILE = Path(__file__).parent.parent / "resources" / "mime.xml"
