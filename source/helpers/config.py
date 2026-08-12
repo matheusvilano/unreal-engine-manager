@@ -8,7 +8,7 @@ _REPO_ROOT = Path(__file__).parent.parent.parent
 APP_ICON = _REPO_ROOT / "resources" / "icon.gif"
 """Path to the application icon."""
 
-MIME_FILE = Path(__file__).parent.parent / "resources" / "mime.xml"
+MIME_FILE = _REPO_ROOT / "resources" / "mime.xml"
 """Path to the MIME XML file."""
 
 INSTALL_ROOT = Path("/opt/unreal-engine-bin")
