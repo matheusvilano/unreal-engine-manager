@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 from grp import getgrnam
-from os import getuid, getgid, chmod, chown, walk, path
+from os import getuid, getgid, chmod, chown, walk, path, W_OK, access
 from pathlib import Path
 from stat import S_IXUSR, S_IXGRP, S_IXOTH
 
@@ -96,13 +96,24 @@ def set_executable_bits(version_path_root: str | Path):
             pass
 
 
-def create_mime_xml_file():
+def can_create_mime_xml_file():
+    mime_dir = Path("/usr/share/mime/packages")
+    destination = mime_dir / "unreal-engine.xml"
+    return destination.exists() or access(mime_dir, W_OK)
+
+
+def create_mime_xml_file(force: bool = False):
     """
     Copy the mime.xml file to the appropriate location.
     """
     mime_dir = Path("/usr/share/mime/packages")
+    destination = mime_dir / "unreal-engine.xml"
+
+    if not force and destination.exists():
+        return
+
     mime_dir.mkdir(parents=True, exist_ok=True)
-    MIME_FILE.copy(mime_dir / MIME_FILE.name)
+    MIME_FILE.copy(destination)
 
 
 def remove_mime_xml_file():

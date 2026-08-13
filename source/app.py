@@ -318,6 +318,12 @@ class UnrealManagerApp(Tk):
         :return: True if the root is accessible, False otherwise.
         """
         if INSTALL_ROOT.exists() and access(INSTALL_ROOT, W_OK):
+            if not system.can_create_mime_xml_file():
+                tk_msgbox_showerror(
+                    "Permission Required",
+                    "Administrator permission is required to install the MIME type."
+                )
+                return False
             return True
 
         user = getuser()
@@ -342,6 +348,13 @@ class UnrealManagerApp(Tk):
             tk_msgbox_showerror(
                 "Permission Denied",
                 f"Administrator permission was not granted or setup failed:\n{INSTALL_ROOT}")
+            return False
+
+        if not system.can_create_mime_xml_file():
+            tk_msgbox_showerror(
+                "Permission Required",
+                "Administrator permission is required to install the MIME type."
+            )
             return False
 
         return INSTALL_ROOT.exists() and access(INSTALL_ROOT, W_OK)
