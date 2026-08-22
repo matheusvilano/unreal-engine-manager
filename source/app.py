@@ -395,15 +395,18 @@ class UnrealManagerApp(Tk):
         dlg.grab_set()
         dlg.resizable(False, False)
 
-        info_label = Label(dlg, text=f"Installing to: {target_dir}", font=("TkDefaultFont", 8), wraplength=380)
-        info_label.pack(pady=(16, 8))
+        content = Frame(dlg)
+        content.place(relx=0.5, rely=0.45, anchor="center")
+
+        info_label = Label(content, text=f"Installing to: {target_dir}", font=("TkDefaultFont", 8), wraplength=380)
+        info_label.pack()
 
         # Progress bar (indeterminate during extraction + setup)
-        progress = Progressbar(dlg, mode="determinate", maximum=100, value=0, length=340)
-        progress.pack(pady=8)
+        progress = Progressbar(content, mode="determinate", maximum=100, value=0, length=340)
+        progress.pack(pady=16)
 
-        status_label = Label(dlg, text="Extracting archive...", font=("TkDefaultFont", 9))
-        status_label.pack(pady=(0, 8))
+        status_label = Label(content, text="Extracting archive...", font=("TkDefaultFont", 9))
+        status_label.pack()
 
         # Launch extraction in a background thread so the UI stays responsive
         self._install_thread = Thread(
